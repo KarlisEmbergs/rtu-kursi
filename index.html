@@ -5,12 +5,13 @@
     <title>HTML&CSS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body style="margin: 0; padding: 0;">
 
     <!-- Header -->
-    <header style="background-color: aliceblue; position: sticky; top: 0; display: flex; flex-direction: row; justify-content: space-between;">
+    <header>
         <a href="#pavasaris">Šeit ir virsraksts, kurš paliek galvenes daļā.</a>
         <div>
             <a href="#vasara">Vasara</a>
@@ -18,38 +19,76 @@
         </div>
     </header>
 
-    <div id="pavasaris">
-        <img src="resources/Pavasaris.jpg" alt="Pavasaris">
+    <div id="pirmaBilde">
+        <img src="resources/Pavasaris.jpg" alt="Pavasaris" id="pavasaris">
+        <h1>Pavasaris</h1>
+        <h2>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex illo accusamus odit eum quae recusandae tempora quas, tempore odio? Ab natus laboriosam perspiciatis hic nemo nisi ea ad ipsum praesentium?</p>
+    </div>
+        
+        <img src="resources/Vasara.jpg" alt="Vasara">
+        <img style="display: block; width:100%" src="resources/Plava.jpg" alt="Plava">
+
         <div>
-            <h1>Pavasaris</h1>
         </div>
         <div id="vasara">
-            <img src="resources/Vasara.jpg" alt="Vasara">
-            <h1>Šeit ir apraksts, kuram ir jāatrodas bildei kreisajā pusē.</h1><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et harum dolorum quis, tempore ab dolores magnam mollitia saepe architecto, placeat ipsa atque quasi. Cupiditate eos, provident vel placeat aliquam incidunt?</p>
+            <br>
         </div>
 
         <div id="plava" style="display: flex; flex-direction: row;">
             <div style="display: block;">
-                <img style="display: block; width:100%" src="resources/Plava.jpg" alt="Plava">
             </div>
             <div style="display: block;">
                 <h1>Šeit apraksts, kuram ir jāatrodas bildes labajā pusē.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat voluptates delectus corrupti nihil quisquam eos ut, quia voluptatem facere numquam qui natus blanditiis sapiente obcaecati rerum nulla? Dolorem, inventore.</p>
             </div>
         </div>
 
         <!-- Exercises -->
-        <div id="exercises">
-            <h1>Uzdevumi</h1><br>
-            <p>Nomaini visiem tekstiem fontu.</p>
-            <p>Sakārto bilžu un tekstu novietojumu.</p>
-            <p>Pieliec tekstu zem virsrakstiem.</p>
-            <p>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</p>
-            <p>Pieliec stilu header daļai, lai tā atgādinātu header.</p>
-            <p>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</p>
-            <p>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</p>
-            <p>Pievieno karti.</p>
-            <p>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</p>
-        </div>
+<div id="exercises">
+<h3>Uzdevumi</h3>
+<ul>
+    <li>Nomaini visiem tekstiem fontu.</li>
+    <li>Sakārto bilžu un tekstu novietojumu.</li>
+    <li>Pieliec tekstu zem virsrakstiem.</li>
+    <li>Pārtaisi uzdevumu sadaļu, izmantojot HTML atbilstošu tagu, lai izveidotu sarakstu.</li>
+    <li>Pieliec stilu header daļai, lai tā atgādinātu header.</li>
+    <li>Pieliec stilu footer daļai, lai teksts būtu centrā un elements izskatītos pēc footer.</li>
+    <li>Augšējo bildi formatē tā, lai tiktu aizņemts viss ekrāna platums.</li>
+    <li>Pievieno karti.</li>
+    <li>Pievieno tabulu, kurai būtu vismaz 2 kolonnas un 3 rindas.</li>
+</ul>
+</div>
+
+<h3>Mana foršā tabula!</h3>
+<table>
+    <thead>
+        <tr>
+            <th>1. rinda</th>
+            <th>1. rinda</th>
+            <th>1. rinda</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2. rinda</td>
+            <td>2. rinda</td>
+            <td>2. rinda</td>
+        </tr>
+        <tr>
+            <td>3. rinda</td>
+            <td>3. rinda</td>
+            <td>3. rinda</td>
+        </tr>
+    </tbody>
+</table>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139177.94280631465!2d23.96392888397777!3d56.971835876374534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb0e5073ded%3A0x400cfcd68f2fe30!2sRiga!5e0!3m2!1sen!2slv!4v1685991743481!5m2!1sen!2slv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+
+        <span>Here is my cool span!</span>
 
         <!-- Footer -->
         <footer>
