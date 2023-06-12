@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Uzdevums | Bootstrap un Formas</title>
+</head>
+
+<body class="bg-image" style="
+  background-image: url('https://images.pexels.com/photos/6101994/pexels-photo-6101994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  height: 100vh;
+">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">KE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.youtube.com/">YouTube</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://boards.lv/">Skritudēļi</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Riktīgi stilīga mājaslapa
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/988914/pexels-photo-988914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/988914/pexels-photo-988914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/988914/pexels-photo-988914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center mt-5">
+        <div class="w-75 shadow border border-2 p-5 mt-3 bg-light">
+            <video class="w-100" autoplay loop muted>
+                <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+            </video>
+            <form action="">
+
+
+                <h1 class="text-primary text-opacity-50">MANA FORŠĀ FORMA AR 50% OPACITY</h1>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Ievadi savu epastu:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="tavs@epasts.lv" required>
+                    </div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <label for="catPhoto">Pievieno foto savu kaķi (PNG, JPG):</label>
+                    <input type="file" id="catPhoto" name="catPhoto" accept="image/png, image/jpeg">
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <h6>Kurš no zemāk minētajiem saldējumiem garšo tev vislabāk?</h6>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saldejums" id="vanilas" value="vanilas">
+                            <label class="form-check-label" for="vanilas">Vaniļas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="saldejums" id="sokolades"
+                                value="sokolades">
+                            <label class="form-check-label" for="sokolades">Šokolādes</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <h6>Kuros veikalos tu iepērc visbiežāk?</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="rimi" id="rimi">
+                            <label class="form-check-label" for="rimi">Rimi</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="maxima" id="maxima">
+                            <label class="form-check-label" for="maxima">Maxima</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="top" id="top">
+                            <label class="form-check-label" for="top">TOP</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="elvi" id="elvi">
+                            <label class="form-check-label" for="elvi">Elvi</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Iesniegt</button>
+            </form>
+        </div>
+
+        <div class="card mb-3" style="width: 100%">
+            <img src="https://images.pexels.com/photos/5069290/pexels-photo-5069290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="card-img-top" alt="a yellow skateboard and person's feets">
+            <div class="card-body">
+                <h5 class="card-title">Skrituļdēlis</h5>
+                <p class="card-text">Vēlies iegādāties foršu skrituļdēli? Spied uz pogas "Iegādāties"!</p>
+                <a href="https://boards.lv/lv/produkti/skate/skeitbords/skeitbordi"
+                    class="btn btn-success">Iegādāties</a>
+            </div>
+        </div>
+
+        <table class="table border border-1 text-center">
+            <thead>
+                <tr>
+                    <th scope="col">Nosaukums</th>
+                    <th scope="col">Minimālais</th>
+                    <th scope="col">Maksimālais</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ferarri</th>
+                    <td>$40,000</td>
+                    <td>$340,000</td>
+                </tr>
+                <tr class="">
+                    <th scope="row">Aston Martin</th>
+                    <td colspan="2">$120,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.pexels.com/photos/17130078/pexels-photo-17130078/free-photo-of-volcanoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="mountain">
+                </div>
+            </div>
+
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Click for a rude cat!
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <img src="https://images.pexels.com/photos/384555/pexels-photo-384555.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="">MEOW MEOW
+                </div>
+            </div>
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+                crossorigin="anonymous"></script>
+        </div>
+</body>
+
+</html>
