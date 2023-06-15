@@ -99,7 +99,6 @@ function randomNumber(number) {
 randomNumber(5);
 
 // 11. uzdevums
-
 function checkNumber(input) {
     if (input % 3 === 0 && input % 5 === 0) {
         console.log('Dalās')
@@ -119,3 +118,91 @@ function checkValues(a, b) {
     }
 }
 checkValues(54, 10);
+
+// 13. uzdevums
+let diena = 'svētdiena';
+switch (diena) {
+    case 'pirmdiena':
+        console.log('Ir nedēļas sākums.')
+        break
+    case 'otrdiena':
+        console.log('Ir nedēļas sākums.')
+        break
+    case 'trešdiena':
+        console.log('Ir nedēļas vidus.')
+        break
+    case 'ceturtdiena':
+        console.log('Ir nedēļas vidus.')
+        break
+    case 'piektdiena':
+        console.log('Nedēļas nogale ir gandrīz šeit!')
+        break
+    case 'sestdiena':
+        console.log('Nedēļas nogale ir šeit!')
+        break
+    case 'svētdiena':
+        console.log('Nedēļas nogale ir gandrīz beigusies. :(')
+        break
+}
+
+// 14. uzdevums
+for (i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// 15. uzdevums
+let skaitītājs = 0;
+while (skaitītājs < 5) {
+    console.log('Sveiki!')
+    skaitītājs++
+}
+
+// 16. uzdevums
+function greeting(name) {
+    console.log(`Sveiks, ${name}!`);
+}
+greeting('Karļis');
+
+// 17. uzdevums
+function calculateArea(garums, platums) {
+    console.log(garums * platums);
+}
+calculateArea(10, 3);
+
+// 18. uzdevums
+function isOdd(isOddNumber) {
+    if (isOddNumber % 2 === 0) {
+        console.log(true)
+    } else if (isOddNumber % 1 === 0) {
+        console.log(false)
+    }
+}
+isOdd(20);
+isOdd(13);
+
+// 19. uzdevums
+function calculateSum(calculateSumArray) {
+    let sumOfArray = 0;
+    for (let arrayValues of calculateSumArray) {
+        sumOfArray += arrayValues;
+    } console.log(sumOfArray);
+}
+calculateSum([3, 6, 7]);
+
+// 20. uzdevums
+
+// 21. uzdevums
+function checkIsNumber(isNumber) {
+    if (isNumber > 0) {
+        console.log('pozitīvs')
+    } else if (isNumber < 0) {
+        console.log('negatīvs')
+    } else if (isNumber = 0) {
+        console.log('nulle')
+    }
+}
+
+// 22. uzdevums
+
