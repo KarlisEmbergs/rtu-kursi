@@ -5,9 +5,11 @@ function addTask() {
   const task = taskInput.value.trim();
 
   if (task !== '') {
-    tasks.push( task );
+    tasks.push(task);
     renderTasks();
   }
+
+  taskInput.value = '';
 }
 
 function renderTasks() {
@@ -19,8 +21,16 @@ function renderTasks() {
     listItem.className = 'list-group-item d-flex align-items-center';
 
     listItem.innerHTML = `
-    <span class="mr-auto">${task}</span>
-    <button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})">Delete</button>
+    <input type="checkbox" id="${index}">
+    <label for="${index}">${task}</label>
+    
+    <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})" id="deleteButton">Delete</button>
+    
+    <button type="button" class="btn btn-warning" onclick="markAsImportant(${task})">Mark as important</button>
+
+
+    </div>
     `;
 
     taskList.appendChild(listItem);
@@ -32,3 +42,7 @@ function deleteTask(index) {
   renderTasks();
 }
 
+function markAsImportant(index) {
+  const clickedElement = document.getElementById(index).parentNode
+  clickedElement.i
+}
