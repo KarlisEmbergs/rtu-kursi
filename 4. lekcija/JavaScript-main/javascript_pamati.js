@@ -205,4 +205,3 @@ function checkIsNumber(isNumber) {
 }
 
 // 22. uzdevums
-
